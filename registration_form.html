@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<style>
+		body {
+			background-color: #f0f8ff;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			color: #ff4500;
+			font-size: 50px;
+			margin-top: 30px;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: #ffffff;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+		}
+
+		hr {
+			border: 1px solid #ff4500;
+		}
+
+		label {
+			font-size: 18px;
+			margin-top: 10px;
+			display: block;
+		}
+
+		input[type="text"], input[type="date"], input[type="file"], textarea, select {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			margin: 5px 0 15px 0;
+			border-radius: 5px;
+			border: 1px solid #ddd;
+		}
+
+		textarea {
+			resize: vertical;
+		}
+
+		input[type="radio"], input[type="checkbox"] {
+			margin-right: 10px;
+		}
+
+		.submit-btn {
+			background-color: #ff4500;
+			color: white;
+			padding: 15px 25px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			width: 100%;
+		}
+
+		.submit-btn:hover {
+			background-color: #ff6347;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Registration Form</h1>
+
+	<hr>
+
+	<form action="" method="get">
+		<label for="fname">Name:</label>
+		<input type="text" name="fname" id="fname" placeholder="Enter your full name" required>
+
+		<label for="email">Email:</label>
+		<input type="text" name="email" id="email" placeholder="Enter your email" required>
+
+		<label for="mobile">Mobile:</label>
+		<input type="text" name="mobile" id="mobile" placeholder="Enter your mobile number" required>
+
+		<label for="address">Address:</label>
+		<textarea rows="5" name="address" id="address" placeholder="Enter your address" required></textarea>
+
+		<label>Gender:</label>
+		<input type="radio" name="gender" value="Male" required> Male
+		<input type="radio" name="gender" value="Female"> Female
+
+		<label>Skills:</label>
+		<input type="checkbox" name="java" value="java"> Java
+		<input type="checkbox" name="python" value="python"> Python
+
+		<label for="branch">Branch:</label>
+		<select name="branch" id="branch" required>
+			<option value="CSE">CSE</option>
+			<option value="ECE">ECE</option>
+			<option value="Mech">Mech</option>
+		</select>
+
+		<label for="date">DOB:</label>
+		<input type="date" name="date" id="date" required>
+
+		<label for="resume">Upload your resume:</label>
+		<input type="file" name="resume" id="resume" required>
+
+
+		<label for="Semester">Semester:</label>
+		<input type="number" name="sem" min="1" max="8">
+		
+		<button type="submit" class="submit-btn">Register</button>
+	</form>
+
+</body>
+</html>
